@@ -1,0 +1,473 @@
+/* font-family link  */
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Play:wght@400;700&family=Playfair+Display+SC:wght@400;700;900&family=Playfair:ital,opsz@0,5..1200;1,5..1200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Play:wght@400;700&family=Playfair+Display+SC:wght@400;700;900&family=Playfair:ital,opsz@0,5..1200;1,5..1200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Outfit:wght@100..900&family=Play:wght@400;700&family=Playfair+Display+SC:wght@400;700;900&family=Playfair:ital,opsz@0,5..1200;1,5..1200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500&display=swap");
+/*   font-family: "Poppins", sans-serif; */
+/* font-family: "Kaushan Script", cursive; */
+/* font-family: "Outfit", sans-serif; */
+
+/* reset code  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+/* common color css variable */
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --gold: #f4a713;
+  --kaushanFont: "Kaushan Script", cursive;
+  --popFont: "Poppins", sans-serif;
+  --outfitFont: "Outfit", sans-serif;
+}
+
+/* main-heading-section */
+.main-heading-section {
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(9, 9, 135, 0.724)),
+    url(./images/heading-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  background-color: rgba(1, 171, 183, 0.817);
+}
+
+.navbar-brand {
+  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 2px #313131;
+  }
+}
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 2.7rem;
+  .navbar-nav .nav-item {
+    a {
+      color: var(--white);
+      font-family: "Outfit", sans-serif;
+      font-size: 1.2rem;
+      transition: all 0.4s;
+      button {
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        border-radius: 2rem;
+        background-color: var(--white);
+        transition: all 0.4s;
+        cursor: pointer;
+      }
+    }
+    a:hover {
+      color: #f4a713;
+    }
+    a button:hover {
+      background-color: #ddd;
+    }
+  }
+}
+/* style  */
+@media only screen and (max-width: 768px) {
+  body {
+    .navbar-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background: none;
+    }
+  }
+}
+.navbar-text {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-family: var(--popFont);
+    font-weight: bold;
+    color: var(--white);
+    font-size: 3rem;
+    text-align: center;
+  }
+  h3 {
+    margin-top: 4rem;
+    font-family: var(--outfitFont);
+    font-size: 500;
+    font-size: 2rem;
+    color: var(--gold);
+    text-align: center;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    button {
+      margin-top: 3rem;
+      padding: 12px 22px;
+      background-color: var(--white);
+      color: var(--black);
+      border-radius: 6px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.4s;
+    }
+    button:hover {
+      background-color: #ddd;
+    }
+  }
+}
+
+/* Fitness Message section */
+.fitness-section {
+  margin: 5rem 0;
+  .img-container {
+    padding-right: 3rem;
+    img {
+      height: 380px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 2px 3px 5px grey;
+      border: 2px solid #ddd;
+      cursor: pointer;
+      transition: all 0.5s;
+    }
+    img:hover {
+      transform: scale(1.03);
+    }
+  }
+  .text-data {
+    margin-right: 3rem;
+
+    h2 {
+      margin-bottom: 2rem;
+      font-family: var(--kaushanFont);
+      font-size: 2.3rem;
+      font-weight: 500;
+      color: var(--gold);
+    }
+    p {
+      font-family: sans-serif;
+      font-weight: normal;
+      line-height: 26px;
+      font-size: 1rem;
+      letter-spacing: 0.6px;
+      color: #696969;
+    }
+  }
+}
+
+/* Fitness Message section two  */
+.fitness-section-two {
+  margin: 3rem;
+  .text-data-2 {
+    h2 {
+      margin-bottom: 2rem;
+      font-family: var(--kaushanFont);
+      font-size: 2.3rem;
+      font-weight: 500;
+      color: var(--gold);
+    }
+    p {
+      margin-right: 4rem;
+      font-family: sans-serif;
+      font-weight: normal;
+      line-height: 26px;
+      font-size: 1rem;
+      letter-spacing: 0.6px;
+      color: #696969;
+    }
+  }
+  .video-play {
+    margin-right: 3rem;
+    iframe {
+      width: 100%;
+      height: 400px;
+      border-radius: 10px;
+      box-shadow: 2px 3px 3px grey;
+      transition: all 0.4s;
+      cursor: pointer;
+      border: 2px solid #ddd;
+    }
+    iframe:hover {
+      transform: scale(1.02);
+    }
+  }
+}
+
+/* GYM message section */
+.gym-message {
+  margin: 3rem 0;
+  .data {
+    box-shadow: 2px 2px 3px #ddd;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin: 15px 0;
+    i {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--gold);
+    }
+    h3 {
+      font-family: var(--outfitFont);
+      font-size: 1.7rem;
+      font-weight: 500;
+      margin-bottom: 10px;
+      color: rgb(2, 2, 79);
+    }
+    p {
+      font-family: sans-serif;
+      font-weight: normal;
+      line-height: 26px;
+      font-size: 1rem;
+      letter-spacing: 0.6px;
+      color: #696969;
+    }
+  }
+  .data:hover {
+    transform: scale(1.02);
+  }
+}
+
+/* GYM message section  two */
+.gym-message-section-two {
+  height: 85vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(2, 2, 46, 0.952)),
+    url(./images/bg-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 3rem;
+}
+
+/* style  */
+@media only screen and (max-width: 768px) {
+  body {
+    .gym-message-section-two {
+      height: 150vh;
+    }
+  }
+}
+.msg-container {
+  margin-top: 3.5rem;
+
+  .msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  .text-content {
+    background-color: #18c5d456;
+    padding: 10px 40px;
+    border-radius: 10px;
+
+    margin-right: 2rem;
+    /* margin-bottom: 2rem; */
+    h4 {
+      font-family: var(--kaushanFont);
+      font-size: 2.3rem;
+      font-weight: 500;
+      color: var(--gold);
+      margin-top: 3rem;
+      i {
+        color: var(--white);
+        font-size: 2.5rem;
+        margin-right: 10px;
+      }
+    }
+    p {
+      font-family: sans-serif;
+      font-weight: normal;
+      line-height: 26px;
+      font-size: 1rem;
+      letter-spacing: 0.6px;
+      color: var(--white);
+    }
+  }
+}
+
+/* Meet Users Section */
+.meet-users {
+  margin-bottom: 3rem;
+  position: relative;
+  h2 {
+    text-align: center;
+    font-family: var(--kaushanFont);
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--gold);
+  }
+  .para {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: normal;
+    line-height: 26px;
+    color: rgb(79, 79, 79);
+    font-size: 1rem;
+    letter-spacing: 0.6px;
+    margin: 1rem 30%;
+  }
+}
+
+.meet-users .img-card {
+  /* position: relative; */
+  padding: 20px;
+  margin: 2rem 0 1rem;
+  height: 290px;
+  width: 100%;
+  padding: 1.3rem;
+  box-shadow: 2px 3px 4px #c9c9c9;
+  transition: all 0.5s;
+  cursor: pointer;
+  .card-para {
+    font-family: sans-serif;
+    font-weight: normal;
+    line-height: 26px;
+    color: rgb(79, 79, 79);
+    font-size: 0.9rem;
+    letter-spacing: 0.6px;
+    text-align: center;
+  }
+  span {
+    color: #24a3f1;
+    text-align: center;
+    font-family: var(--popFont);
+    font-size: 1.1rem;
+    i {
+      font-size: 1.5rem;
+    }
+  }
+  .card-imagess {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 4px #a1a1a1;
+    position: absolute;
+    left: 35%;
+    bottom: -2.5rem;
+  }
+}
+
+.meet-users .img-card:hover {
+  transform: scale(0.96);
+}
+/* Form-section */
+.form-section {
+  height: 300px;
+  background-color: #029eaa;
+  /* padding: 6rem 0; */
+  margin: 3rem;
+  .form-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h4 {
+      margin-top: 2rem;
+      text-align: center;
+      font-family: var(--kaushanFont);
+      font-size: 3rem;
+      font-weight: 500;
+      color: var(--gold);
+    }
+    p {
+      font-family: sans-serif;
+      font-size: 1rem;
+      font-weight: normal;
+      color: var(--white);
+    }
+    form {
+      margin-top: 3rem;
+      input {
+        width: 400px;
+        /* background: transparent; */
+        padding: 10px 20px;
+        border-radius: 2rem;
+        outline: none;
+        border: none;
+      }
+      button {
+        margin-left: -6rem;
+        padding: 10px 20px;
+        color: var(--white);
+        background-color: var(--gold);
+        border-radius: 2rem;
+        border: none;
+        outline: none;
+      }
+    }
+  }
+}
+
+/* Footer Section */
+.footer-color {
+  background-color: #080854;
+  padding: 20px 0;
+}
+
+.footer-container {
+  margin: 2rem 0;
+  h3 {
+    font-family: var(--outfitFont);
+    font-size: 2rem;
+    color: var(--gold);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-family: sans-serif;
+    color: var(--white);
+    font-size: 1rem;
+    margin: 10px 0;
+    i {
+      font-size: 1.2rem;
+      margin-right: 10px;
+    }
+  }
+  .logo {
+    img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin: 10px;
+      box-shadow: 2px 2px 7px #828181;
+    }
+    h3 {
+      margin-top: 2rem;
+      font-family: var(--outfitFont);
+      font-size: 1.5rem;
+      color: var(--gold);
+    }
+  }
+  .para {
+    margin-right: 30px;
+  }
+  .contact {
+    p {
+      a {
+        text-decoration: none;
+        color: var(--white);
+        i {
+          color: rgb(35, 35, 254);
+        }
+      }
+    }
+  }
+}
